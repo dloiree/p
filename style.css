@@ -43,7 +43,7 @@ body {
 
 .brand {
     display: flex;
-    align-items: center; /* biar logo dan judul sejajar vertikal */
+    align-items: center; /* logo dan judul sejajar vertikal */
 }
 
 .logo {
@@ -93,6 +93,42 @@ body {
 
 .nav-links.active li {
     margin: 15px 0;
+}
+
+/* RESPONSIVE NAVBAR */
+
+/* TABLET */
+@media (max-width: 992px) {
+    .judul {
+        font-size: 18px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .judul {
+        font-size: 18px;
+    }
+}
+
+/* EXTRA SMALL PHONE */
+@media (max-width: 480px) {
+    .logo {
+        width: 38px;
+    }
+
+    .judul {
+        font-size: 16px;
+    }
 }
 
 /* =========================================================
@@ -228,7 +264,6 @@ body {
     color: #333;
     border-radius: 10px;
     overflow: hidden;
-    text-align: left;
 
     opacity: 0;
     transform: translateY(40px);
@@ -374,7 +409,3 @@ copyright {
         display: block;
     }
 }
-
-
-
-
