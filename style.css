@@ -355,3 +355,35 @@ copyright {
         display: block;
     }
 }
+
+/* ============================
+   MOBILE NAVIGATION
+   ============================ */
+@media (max-width: 768px) {
+
+    nav ul {
+        display: none; /* sembunyikan menu desktop */
+        flex-direction: column;
+        background: #fff; /* sesuaikan dengan warna web kamu */
+        position: absolute;
+        top: 60px; /* sesuaikan tinggi header */
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    nav ul.show {
+        display: flex; /* tampilkan setelah tombol ditekan */
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        padding: 10px;
+    }
+}
+
+
