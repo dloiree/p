@@ -296,26 +296,12 @@ copyright {
 }
 
 /* Untuk layar mobile (max-width 768px) */
+/* Untuk layar mobile (max-width 768px) */
 @media screen and (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr; /* ubah jadi 1 kolom */
-        gap: 15px; /* jarak antar card sedikit lebih kecil bisa opsional */
+        gap: 15px; /* jarak antar card */
     }
-
-    .card {
-        flex-direction: column; /* agar foto ada di atas dan info di bawah */
-        align-items: center;    /* opsional, supaya rapi */
-        text-align: center;     /* opsional, agar teks di tengah */
-    }
-
-    .foto {
-        margin-right: 0; /* hapus margin kanan karena sudah di atas */
-        margin-bottom: 10px; /* beri jarak bawah */
-        width: 100%; /* foto full width bisa opsional */
-        height: auto;
-    }
-
-    .info p, .info b {
-        text-align: center; /* agar teks center di mobile */
-    }
+    /* Tidak perlu ubah .card, .foto, atau .info */
 }
+
